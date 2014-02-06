@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="src">
       <UniqueIdentifier>{3931f79e-2f6c-4c40-aae5-0d63c228b7a4}</UniqueIdentifier>
     </Filter>
@@ -17,8 +13,26 @@
     <Filter Include="include\pch">
       <UniqueIdentifier>{360346d9-c5ce-4f5f-9b9c-f3f34eb08f23}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\pch">
-      <UniqueIdentifier>{dfdc8ae5-b3a3-421e-89fe-3dff21457ba5}</UniqueIdentifier>
+    <Filter Include="include\window">
+      <UniqueIdentifier>{fe60f5e7-db9e-46ef-a5be-cee37c45166e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\utils">
+      <UniqueIdentifier>{e537e7ca-9f36-4e9f-bc6e-eb022227898d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\utils\timer">
+      <UniqueIdentifier>{85a9c90b-7dcf-4745-930c-626abb760a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils">
+      <UniqueIdentifier>{d2ae9728-73c3-432b-982d-70f4f2f5eb1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils\timer">
+      <UniqueIdentifier>{6b7b936e-a619-44c2-963a-43b3453a170b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils\timer\win32">
+      <UniqueIdentifier>{dfb8970b-c6db-40e7-8710-a5d0e5dfc2b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\utils\timer\win32">
+      <UniqueIdentifier>{661e5f11-413c-4c73-851f-59c7824469a9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -28,10 +42,25 @@
     <ClCompile Include="..\include\pch\pch.cpp">
       <Filter>include\pch</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\utils\timer\win32\TimerWin32.cpp">
+      <Filter>src\utils\timer\win32</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\pch\pch.h">
       <Filter>include\pch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\utils\INoCopy.h">
+      <Filter>include\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\utils\timer\win32\TimerWin32.h">
+      <Filter>include\utils\timer\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\utils\timer\ITimer.h">
+      <Filter>include\utils\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\utils\timer\Timer.h">
+      <Filter>include\utils\timer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

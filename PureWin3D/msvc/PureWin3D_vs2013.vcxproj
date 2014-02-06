@@ -17,9 +17,14 @@
   <ItemGroup>
     <ClCompile Include="..\include\pch\pch.cpp" />
     <ClCompile Include="..\src\main\main.cpp" />
+    <ClCompile Include="..\src\utils\timer\win32\TimerWin32.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\pch\pch.h" />
+    <ClInclude Include="..\include\utils\INoCopy.h" />
+    <ClInclude Include="..\include\utils\timer\ITimer.h" />
+    <ClInclude Include="..\include\utils\timer\Timer.h" />
+    <ClInclude Include="..\include\utils\timer\win32\TimerWin32.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5817AA84-19C1-4361-ADA3-43A8FC17F0D8}</ProjectGuid>
