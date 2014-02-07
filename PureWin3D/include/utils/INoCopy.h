@@ -1,5 +1,5 @@
-#ifndef I_NO_COPY_H
-#define I_NO_COPY_H
+#ifndef PW_I_NO_COPY_H
+#define PW_I_NO_COPY_H
 
 namespace pw
 {

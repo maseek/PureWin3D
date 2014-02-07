@@ -16,10 +16,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\include\pch\pch.cpp" />
+    <ClCompile Include="..\src\core\Core.cpp" />
     <ClCompile Include="..\src\main\main.cpp" />
     <ClCompile Include="..\src\utils\timer\win32\TimerWin32.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\core\Core.h" />
     <ClInclude Include="..\include\pch\pch.h" />
     <ClInclude Include="..\include\utils\INoCopy.h" />
     <ClInclude Include="..\include\utils\timer\ITimer.h" />

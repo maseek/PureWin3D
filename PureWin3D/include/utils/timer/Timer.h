@@ -1,5 +1,5 @@
-#ifndef TIMER_H
-#define TIMER_H
+#ifndef PW_TIMER_H
+#define PW_TIMER_H
 
 #include "../../pch/pch.h"
 

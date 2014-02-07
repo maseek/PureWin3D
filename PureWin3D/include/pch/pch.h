@@ -1,8 +1,8 @@
 ///
 /// precompiled header
 ///
-#ifndef PCH_H
-#define PCH_H
+#ifndef PW_PCH_H
+#define PW_PCH_H
 
 #if defined( _WIN32 ) || defined( __WIN32__ )
 // Windows

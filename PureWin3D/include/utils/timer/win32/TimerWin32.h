@@ -1,5 +1,5 @@
-#ifndef TIMER_WIN_32_H
-#define TIMER_WIN_32_H
+#ifndef PW_TIMER_WIN_32_H
+#define PW_TIMER_WIN_32_H
 
 #include "../ITimer.h"
 
@@ -11,21 +11,22 @@ namespace pw
 		TimerWin32( );
 		double update( );
 		void reset( );
-		double timeInMs( ) const;
+		double elapsedTime( ) const;
 		double inverseFps( ) const;
 	private:
 		double findCurrentTimeMs( );
+		static void queryPerformanceFrequency( LARGE_INTEGER* frequency );
 	private:
 		double		_lastUpdateTimeMs;
-		double		_currentTimeMs;
+		double		_elapsedTimeMs;
 		double		_inverseFps;
 		double		_fpsCounterAccumulatedTimeMs;
 		unsigned	_fpsCounterCurrentFrame;
+		static const double ELAPSED_TIME_ADDITION;
+		static const double INVERSE_FPS_UPDATE_FRAME_COUNT;
+		static const unsigned FPS_UPDATE_FRAME_COUNT;
 	};
 
-	extern const double TIMER_CURRENT_TIME_ADDITION;
-	extern const double TIMER_INVERSE_FPS_UPDATE_FRAME_COUNT;
-	extern const unsigned TIMER_FPS_UPDATE_FRAME_COUNT;
 }
 
 #endif
