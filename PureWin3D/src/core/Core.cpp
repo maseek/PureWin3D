@@ -4,22 +4,37 @@
 
 namespace pw
 {
-	Core::Core( ) : _running( true )
+	Core::Core( const ClientConfig& clientConfig ) : _running( true ), _clientView( clientConfig )
 	{
 
 	}
-
-	void Core::run( )
+	bool Core::isRunning( ) const
 	{
-		pw::Timer timer;
+		return _running;
+	}
+	void Core::gameLoop()
+	{
+		double startTime = time( );
+		double previousTime = 0;
 		while ( _running )
 		{
-			update( timer.update( ) );
+			double currentTime = time( ) - startTime;
+			double fps = 1000 / ( currentTime - previousTime );
+			std::cout << ( fps ) << '\n';
+			previousTime = currentTime;
+			InputMessage msg;
+			while ( _clientView.popMessage( msg ) )
+			{
+				switch ( msg.type )
+				{
+				case InputMessage::Type::Close:
+				{
+					_clientView.close( );
+					_running = false;
+					break;
+				}
+				}
+			}
 		}
-	}
-
-	void Core::update( double deltaMs )
-	{
-
 	}
 }

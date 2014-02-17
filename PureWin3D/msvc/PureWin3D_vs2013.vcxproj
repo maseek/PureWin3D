@@ -16,17 +16,24 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\include\pch\pch.cpp" />
+    <ClCompile Include="..\src\core\ClientConfig.cpp" />
+    <ClCompile Include="..\src\core\ClientView.cpp" />
     <ClCompile Include="..\src\core\Core.cpp" />
     <ClCompile Include="..\src\main\main.cpp" />
     <ClCompile Include="..\src\utils\timer\win32\TimerWin32.cpp" />
+    <ClCompile Include="..\src\window\win32\WindowWin32.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\core\ClientConfig.h" />
+    <ClInclude Include="..\include\core\ClientView.h" />
     <ClInclude Include="..\include\core\Core.h" />
     <ClInclude Include="..\include\pch\pch.h" />
-    <ClInclude Include="..\include\utils\INoCopy.h" />
-    <ClInclude Include="..\include\utils\timer\ITimer.h" />
     <ClInclude Include="..\include\utils\timer\Timer.h" />
     <ClInclude Include="..\include\utils\timer\win32\TimerWin32.h" />
+    <ClInclude Include="..\include\window\InputDevices.h" />
+    <ClInclude Include="..\include\window\InputMessage.h" />
+    <ClInclude Include="..\include\window\win32\WindowWin32.h" />
+    <ClInclude Include="..\include\window\Window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5817AA84-19C1-4361-ADA3-43A8FC17F0D8}</ProjectGuid>
@@ -117,7 +124,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PrecompiledHeader>Create</PrecompiledHeader>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>

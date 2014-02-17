@@ -5,10 +5,16 @@
 #endif
 
 #include "core/Core.h"
+#include "core/ClientConfig.h"
+#include "utils/timer/Timer.h"
+
+using namespace pw;
 
 int main( )
 {
-	pw::Core core;
-	core.run( );
+	ClientConfig clientConfig;
+	Core core( clientConfig );
+	core.gameLoop( );
 	return 0;
 }
+

@@ -40,6 +40,15 @@
     <Filter Include="src\core">
       <UniqueIdentifier>{6156b22d-9898-4377-9dd0-bebbcc9d634a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\window\win32">
+      <UniqueIdentifier>{3f5ce874-ea45-453b-bc13-64fb76c7df55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\window">
+      <UniqueIdentifier>{1e06f78c-79d3-4dd5-a5df-421227f67bb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\window\win32">
+      <UniqueIdentifier>{a97be33c-098b-49d4-abbd-3b766dd77203}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main\main.cpp">
@@ -51,7 +60,16 @@
     <ClCompile Include="..\src\utils\timer\win32\TimerWin32.cpp">
       <Filter>src\utils\timer\win32</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\window\win32\WindowWin32.cpp">
+      <Filter>src\window\win32</Filter>
+    </ClCompile>
     <ClCompile Include="..\src\core\Core.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\ClientConfig.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\ClientView.cpp">
       <Filter>src\core</Filter>
     </ClCompile>
   </ItemGroup>
@@ -59,20 +77,32 @@
     <ClInclude Include="..\include\pch\pch.h">
       <Filter>include\pch</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\utils\INoCopy.h">
-      <Filter>include\utils</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\utils\timer\win32\TimerWin32.h">
       <Filter>include\utils\timer\win32</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\utils\timer\ITimer.h">
-      <Filter>include\utils\timer</Filter>
     </ClInclude>
     <ClInclude Include="..\include\utils\timer\Timer.h">
       <Filter>include\utils\timer</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\core\ClientView.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\window\Window.h">
+      <Filter>include\window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\window\win32\WindowWin32.h">
+      <Filter>include\window\win32</Filter>
+    </ClInclude>
     <ClInclude Include="..\include\core\Core.h">
       <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\core\ClientConfig.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\window\InputDevices.h">
+      <Filter>include\window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\window\InputMessage.h">
+      <Filter>include\window</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,19 +1,24 @@
-#ifndef PW_CORE_H
-#define PW_CORE_H
+#ifndef PW_WORLD_H 
+#define PW_WORLD_H
 
-#include "../utils/INoCopy.h"
+#include "ClientView.h"
 
 namespace pw
 {
-	class Core : INoCopy
+	class ClientConfig;
+	class Core
 	{
 	public:
-		Core( );
-		void run( );
+		explicit Core( const ClientConfig& clientConfig );
+		Core( const Core& ) = delete;
+		Core& operator=( const Core& ) = delete;
+	public:
+		bool isRunning( ) const;
+	public:
+		void gameLoop( );
 	private:
-		void update( double deltaMs );
-	private:
-		bool _running;
+		bool		_running;
+		ClientView	_clientView;
 	};
 }
 
