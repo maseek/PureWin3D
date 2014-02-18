@@ -49,6 +49,7 @@ namespace pw
 // for quick debugging
 #include <iostream>
 
+#include <cstdint>
 #include <string>
 #include <tuple>
 #include <utility>

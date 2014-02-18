@@ -17,8 +17,7 @@ namespace pw
 			MouseButtonUp,
 			MouseMove,
 			MouseWheel,
-			Text,
-			Count
+			Text
 		};
 		struct KeyMessage
 		{
@@ -35,11 +34,11 @@ namespace pw
 			unsigned short x;
 			unsigned short y;
 			MouseButton type;
-			bool ctrl;
 			bool lButton;
-			bool mButton;
 			bool rButton;
 			bool shift;
+			bool ctrl;
+			bool mButton;
 			bool xButton1;
 			bool xButton2;
 		};
@@ -47,11 +46,11 @@ namespace pw
 		{
 			unsigned short x;
 			unsigned short y;
-			bool ctrl;
 			bool lButton;
-			bool mButton;
 			bool rButton;
 			bool shift;
+			bool ctrl;
+			bool mButton;
 			bool xButton1;
 			bool xButton2;
 		};
@@ -60,11 +59,11 @@ namespace pw
 			unsigned short x;
 			unsigned short y;
 			unsigned short delta;
-			bool ctrl;
 			bool lButton;
-			bool mButton;
 			bool rButton;
 			bool shift;
+			bool ctrl;
+			bool mButton;
 			bool xButton1;
 			bool xButton2;
 		};
