@@ -33,6 +33,15 @@ namespace pw
 					_running = false;
 					break;
 				}
+				case InputMessage::Type::KeyDown:
+				case InputMessage::Type::KeyUp:
+				case InputMessage::Type::MouseButtonDown:
+				case InputMessage::Type::MouseButtonUp:
+				case InputMessage::Type::MouseMove:
+				case InputMessage::Type::MouseWheel:
+				{
+					break;
+				}
 				}
 			}
 		}

@@ -23,6 +23,7 @@ namespace pw
 		static std::tuple<unsigned, unsigned, unsigned> getCurrentMode( );
 	private:
 		std::queue<InputMessage>	_messages;
+		std::array<bool, 255>		_oldKeyStates;
 		WindowHandle				_windowHandle;
 		HCURSOR						_mouseCursor;
 		unsigned					_width;

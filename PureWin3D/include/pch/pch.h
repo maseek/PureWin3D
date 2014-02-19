@@ -51,6 +51,9 @@ namespace pw
 
 #include <cstdint>
 #include <string>
-#include <tuple>
+
 #include <utility>
+
+#include <tuple>
+#include <array>
 #include <queue>
