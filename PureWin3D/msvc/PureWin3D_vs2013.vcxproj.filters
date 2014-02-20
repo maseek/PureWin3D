@@ -49,6 +49,9 @@
     <Filter Include="src\window\win32">
       <UniqueIdentifier>{a97be33c-098b-49d4-abbd-3b766dd77203}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\graphics">
+      <UniqueIdentifier>{45d6e801-a173-4a30-9db7-c6e7fa6c317b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main\main.cpp">
@@ -103,6 +106,15 @@
     </ClInclude>
     <ClInclude Include="..\include\window\InputMessage.h">
       <Filter>include\window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\RendererKind.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\Renderer.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\graphics\Renderer.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

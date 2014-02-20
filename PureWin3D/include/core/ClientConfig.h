@@ -1,6 +1,8 @@
 #ifndef PW_CLIENT_CONFIG_H
 #define PW_CLIENT_CONFIG_H
 
+#include "../graphics/RendererKind.h"
+
 namespace pw
 {
 	enum class WindowStyle : unsigned
@@ -23,11 +25,13 @@ namespace pw
 		unsigned getHeight( ) const;
 		unsigned getBitsPerPx( ) const;
 		WindowStyle getWindowStyle( ) const;
+		RendererKind getRendererKind( ) const;
 	private:
 		unsigned		_width;
 		unsigned		_height;
 		unsigned		_bitsPerPx;
 		WindowStyle		_windowStyle;
+		RendererKind	_rendererKind;
 	};
 }
 

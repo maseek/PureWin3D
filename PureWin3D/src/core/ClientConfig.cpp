@@ -4,7 +4,7 @@
 
 namespace pw
 {
-	ClientConfig::ClientConfig( ) : _windowStyle( WindowStyle::Default )
+	ClientConfig::ClientConfig( ) : _windowStyle( WindowStyle::Default ), _rendererKind( RendererKind::Default )
 	{
 		std::tie( _width, _height, _bitsPerPx ) = Window::getCurrentMode( );
 	}
@@ -23,5 +23,9 @@ namespace pw
 	WindowStyle ClientConfig::getWindowStyle( ) const
 	{
 		return _windowStyle;
+	}
+	RendererKind ClientConfig::getRendererKind( ) const
+	{
+		return _rendererKind;
 	}
 }
