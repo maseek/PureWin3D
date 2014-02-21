@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "../../../include/window/win32/WindowWin32.h"
+#include "../../include/window/WindowWin32.h"
 
 namespace pw
 {

@@ -8,7 +8,7 @@ namespace pw
 	bool loadRenderer( RendererKind rendererKind );
 	namespace
 	{
-		const std::string& rendererKindToFileName( RendererKind rendererKind );
+		std::string rendererKindToFileName( RendererKind rendererKind );
 	}
 }
 

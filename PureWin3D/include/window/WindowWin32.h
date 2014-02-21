@@ -1,8 +1,8 @@
 #ifndef PW_WINDOW_WIN_32_H 
 #define PW_WINDOW_WIN_32_H
 
-#include "../../core/ClientConfig.h"
-#include "../InputMessage.h"
+#include "../core/ClientConfig.h"
+#include "InputMessage.h"
 
 namespace pw
 {
